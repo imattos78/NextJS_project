@@ -8,7 +8,7 @@ const Container = (props) => (
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css"/>
         </Head>
         <Navigation/>
-        <div>
+        <div className="container p-4">
             {props.children}
         </div>
 
