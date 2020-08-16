@@ -1,11 +1,18 @@
-import Navigation from '../components/navigation'
+import Container from "../components/container"
+import Head from 'next/head';
+
 
 const About = () =>{
     return (
-        <div>
-            <Navigation/>
-            <h1>About</h1>
-        </div>
+
+        <Container>
+            <Head>
+                <title>Next Project - About</title>
+            </Head>
+                <h1>About</h1>
+
+        </Container>
+        
     )
 }
 

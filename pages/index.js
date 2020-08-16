@@ -1,12 +1,17 @@
-import Navigation from '../components/navigation'
-const Index = () =>{
+import Container from "../components/container"
+import Head from "next/head"
+
+const Index = () => {
     return (
-        <div>
-            <Navigation/>
-            <h1>
-                Index
-            </h1>
-        </div>
+        <Container>
+            <Head>
+                <title>Next Project - Home</title>
+            </Head>
+            <h1>Index</h1>
+        </Container>
+
+
+
     )
 }
 
