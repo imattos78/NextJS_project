@@ -1,7 +1,8 @@
 import Container from "../components/container"
 import Head from "next/head"
 
-const Index = () => {
+const Index = (props) => {
+    console.log(props)
     return (
         <Container>
             <Head>
@@ -13,6 +14,13 @@ const Index = () => {
 
 
     )
+}
+Index.getInitialProps =  async (ctx) =>{
+    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    const data = await res.json()
+    console.log(data)
+    return {users:data}
+ 
 }
 
 export default Index
