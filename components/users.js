@@ -20,6 +20,6 @@ const Users = (props) => {
         </ul>
     )
 
-};
+}
 
 export default Users

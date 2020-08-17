@@ -1,6 +1,6 @@
 import Container from "../components/container"
 import Head from "next/head"
-import fetch from 'isomorphic-fetch';
+//import fetch from 'isomorphic-fetch';
 import Users from '../components/users';
 
 const Index = (props) => {
