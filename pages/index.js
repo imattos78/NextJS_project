@@ -1,5 +1,7 @@
 import Container from "../components/container"
 import Head from "next/head"
+import fetch from 'isomorphic-fetch';
+import Users from '../components/users';
 
 const Index = (props) => {
     console.log(props)
@@ -8,7 +10,9 @@ const Index = (props) => {
             <Head>
                 <title>Next Project - Home</title>
             </Head>
-            <h1>Index</h1>
+            <h1>Next</h1>
+            <Users users={props.users}/>
+
         </Container>
 
 
@@ -18,7 +22,6 @@ const Index = (props) => {
 Index.getInitialProps =  async (ctx) =>{
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
     const data = await res.json()
-    console.log(data)
     return {users:data}
  
 }
