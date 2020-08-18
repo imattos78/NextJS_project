@@ -1,9 +1,10 @@
 {
+  "/about": "pages/about.html",
+  "/": "pages/index.js",
+  "/services": "pages/services.html",
+  "/users/[id]": "pages/users/[id].js",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/about": "pages/about.js",
-  "/users/[id]": "pages/users/[id].js",
-  "/": "pages/index.js",
-  "/services": "pages/services.js"
+  "/404": "pages/404.html"
 }
