@@ -1,16 +1,15 @@
-import Container from "../components/container"
+import Container from "../components/Container"
 import Head from "next/head"
-//import fetch from 'isomorphic-fetch';
-import Users from '../components/users';
+import Users from '../components/Users'
+
 
 const Index = (props) => {
-    console.log(props)
     return (
         <Container>
             <Head>
                 <title>Next Project - Home</title>
             </Head>
-            <h1>Next</h1>
+            <h1>Users</h1>
             <Users users={props.users}/>
 
         </Container>
